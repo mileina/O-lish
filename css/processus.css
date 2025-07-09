@@ -1,0 +1,48 @@
+.processus {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.container-processus {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.processus-subtitle {
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.step {
+  flex: 1;
+  min-width: 220px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.step h3 span {
+  color: #e53c3c;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}

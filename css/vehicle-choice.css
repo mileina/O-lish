@@ -1,0 +1,92 @@
+.vehicle-section {
+  padding: 80px 40px;
+  background-color: #018BED;
+  text-align: center;
+}
+
+.vehicle-section h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.vehicle-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.vehicle-card {
+  width: 180px;
+  padding: 25px 15px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vehicle-card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.vehicle-card p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.vehicle-card p small {
+  display: block;
+  color: #555;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.vehicle-card:hover,
+.vehicle-card.selected {
+  background-color: #e53c3c;
+  border-color: #e53c3c;
+  color: white;
+}
+
+.vehicle-card:hover p,
+.vehicle-card:hover small,
+.vehicle-card.selected p,
+.vehicle-card.selected small {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .vehicle-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vehicle-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .vehicle-card img {
+    width: 60px;
+  }
+
+  .vehicle-section h2 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .vehicle-card p {
+    font-size: 15px;
+  }
+
+  .vehicle-card p small {
+    font-size: 12px;
+  }
+}

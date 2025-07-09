@@ -1,0 +1,96 @@
+/* topbar.css */
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: 47px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.topbar-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 100px;
+  position: relative;
+}
+
+.topbar-section:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topbar .contact {
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.topbar .socials {
+  display: flex;
+  gap: 10px;
+}
+
+.topbar .socials a {
+  color: white;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.topbar .socials a:hover {
+  color: #ff4141;
+}
+
+.topbar .cta {
+  background-color: #e53c3c;
+  color: #ffffff;
+  padding: 0 25px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.topbar .cta:hover {
+  background-color: #ffffff;
+    color: #e53c3c;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .topbar-section {
+    padding: 5px 0;
+    justify-content: center;
+  }
+
+  .topbar-section:not(:last-child)::after {
+    display: none;
+  }
+
+  .topbar .cta {
+    width: 100%;
+    justify-content: center;
+    border-radius: 0;
+  }
+}
+    

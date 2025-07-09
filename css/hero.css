@@ -1,0 +1,122 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+background: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 900px;
+}
+
+.hero-content .slogan {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.hero-content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.hero-content .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #e53c3c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #e53c3c;
+}
+
+.countdown {
+  border: 1px solid white;
+  color: white;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .hero-content .slogan {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+
+  .hero-content .buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .countdown {
+    padding: 10px 20px;
+    font-size: 13px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 16px;
+  }
+
+  .hero-content .slogan {
+    font-size: 10px;
+  }
+}

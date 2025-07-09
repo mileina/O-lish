@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O'Polish</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/topbar.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/services-hero.css" />
+  <link rel="stylesheet" href="css/vehicle-choice.css" />
+  <link rel="stylesheet" href="css/formule-lavage.css" />
+  <link rel="stylesheet" href="css/pricing.css" />
+  <link rel="stylesheet" href="css/prestations.css" />
+  <link rel="stylesheet" href="css/resume.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- VIDEO + TOPBAR + NAVBAR + HERO -->
+<div class="video-wrapper">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="images/videobg2.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <div class="video-overlay-content">
+    <div class="topbar">
+      <div class="topbar-section">
+        <div class="contact">contact@rmddetailing.fr</div>
+        <div class="divider"></div>
+      </div>
+      <div class="topbar-section">
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div class="topbar-section">
+        <button class="cta">RÉSERVER</button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="O'Polish Logo" />
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Réalisation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="services-hero">
+      <div class="hero-content">
+        <h1>Choisissez la formule qui sublimera votre véhicule</h1>
+        <a href="#vehicle-choice" class="btn-primary">SELECTIONNER</a>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- CHOIX VEHICULE -->
+<section id="vehicle-choice" class="vehicle-section">
+  <h2>Choisissez votre type de véhicule</h2>
+  <div class="vehicle-options">
+    <div class="vehicle-card" data-type="citadine">
+      <img src="images/citadine.png" alt="Citadine">
+      <p>Citadine<br><small>Twingo, Fiat 500...</small></p>
+    </div>
+    <div class="vehicle-card" data-type="berline">
+      <img src="images/berline.png" alt="Berline">
+      <p>Berline<br><small>Classe C, Passat...</small></p>
+    </div>
+    <div class="vehicle-card" data-type="monospace">
+      <img src="images/monospace.png" alt="Monospace">
+      <p>Monospace<br><small>Scénic, Galaxy...</small></p>
+    </div>
+    <div class="vehicle-card" data-type="suv">
+      <img src="images/suv.png" alt="SUV 4x4">
+      <p>SUV / 4x4<br><small>X5, Q7, Touareg...</small></p>
+    </div>
+  </div>
+</section>
+
+<!-- CHOIX MODE LAVAGE (hidden until vehicle selected) -->
+<div class="formule-lavage-choice" style="display: none;">
+  <h2>Sélectionnez votre mode de lavage</h2>
+  <div class="choice-buttons">
+    <button class="choice-btn" data-choice="formule">Choisir une formule</button>
+    <button class="choice-btn" data-choice="lavage">Choisir un type de lavage</button>
+  </div>
+</div>
+
+<!-- FORMULE PRICING -->
+<section class="pricing-section" style="display:none;">
+<div class="pricing-title">
+    <span class="tag">TARIFS</span>
+    <h2>CHOISISSEZ VOTRE FORMULE</h2>
+  </div>
+
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>BASIC</h3>
+      <p class="price">16,95 €</p>
+      <ul>
+        <li>✔ Rinçage extérieur rapide</li>
+        <li>✔ Aspiration rapide</li>
+        <li>✔ Vitres extérieures</li>
+        <li>✔ Séchage manuel</li>
+      </ul>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>DELUXE</h3>
+      <p class="price">29,50 €</p>
+      <ul>
+        <li>✔ Lavage complet extérieur</li>
+        <li>✔ Aspiration intérieure</li>
+        <li>✔ Vitres intérieures</li>
+        <li>✔ Séchage + parfum</li>
+      </ul>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>ULTIMATE</h3>
+      <p class="price">44,40 €</p>
+      <ul>
+        <li>✔ Lavage complet + jantes</li>
+        <li>✔ Traitement des plastiques</li>
+        <li>✔ Brillance pneus</li>
+        <li>✔ Nettoyage tableau de bord</li>
+      </ul>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>ULTRA ULTIMATE</h3>
+      <p class="price">70,50 €</p>
+      <ul>
+        <li>✔ Lavage intégral + cire </li>
+        <li>✔ Traitement céramique</li>
+        <li>✔ Finition premium</li>
+        <li>✔ Brillance extrême</li>
+      </ul>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+  </div>
+</section>
+
+<!-- LAVAGE PRICING -->
+<section class="lavage-section" style="display:none;">
+  <div class="pricing-title">
+    <span class="tag">TARIFS</span>
+    <h2>SÉLECTIONNEZ VOTRE TYPE DE LAVAGE</h2>
+  </div>
+
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>PREMIUM</h3>
+      <p class="price">109 €</p>
+      <ul>
+        <li>✔ Nettoyage des jantes et brillance pneus</li>
+        <li>✔ Vitres et rétroviseur propres</li>
+        <li>✔ Plastiques extérieurs et carrosserie nettoyés</li>
+        <li>✔ Intérieur : tableau de bord, plastiques, volant...</li>
+        <li>✔ Aspiration complète</li>
+      </ul>
+      <p class="card-desc">Durée : 135 minutes</p>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>PLATINIUM</h3>
+      <p class="price">139 €</p>
+      <ul>
+        <li>✔ Tous les soins Premium</li>
+        <li>✔ Lavage extérieur approfondi avec produits haut de gamme</li>
+        <li>✔ Polissage & cire protectrice</li>
+        <li>✔ Intérieur complet, rénovation plastiques</li>
+        <li>✔ Désodorisation</li>
+      </ul>
+      <p class="card-desc">Durée : 165 minutes</p>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>EXCELLENCE</h3>
+      <p class="price">189 €</p>
+      <ul>
+        <li>✔ Tous les soins Premium & Platinium</li>
+        <li>✔ Rénovation jantes, shampoing sièges/moquettes</li>
+        <li>✔ Désinfection complète de l’air</li>
+        <li>✔ Traitement anti-traces vitres & rétroviseurs</li>
+        <li>✔ Finition haut de gamme</li>
+      </ul>
+      <p class="card-desc">Durée : 225 minutes</p>
+      <a href="#" class="btn-reserver">SELECTIONNER</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- PRESTATION SECTION -->
+
+<section class="prestations-section">
+  <div class="prestations-title">
+    <span class="tag">OPTIONS</span>
+    <h2>Nos prestations à la carte</h2>
+    <p class="subtitle">Ajoutez des soins exclusifs pour un résultat sur-mesure</p>
+  </div>
+
+  <form class="prestations-list">
+    <label><input type="checkbox" name="option" value="24"> Rénovation pneus & plastiques extérieurs — <strong>24€</strong></label>
+    <label><input type="checkbox" name="option" value="39"> Cire protectrice carrosserie — <strong>39€</strong></label>
+    <label><input type="checkbox" name="option" value="55"> Lustrage manuel extérieur — <strong>55€</strong></label>
+    <label><input type="checkbox" name="option" value="29"> Rénovation optiques de phares — <strong>29€</strong></label>
+    <label><input type="checkbox" name="option" value="15"> Suppression d'autocollants — <strong>15€</strong></label>
+    <label><input type="checkbox" name="option" value="12"> Détachage carrosserie (goudron, fientes…) — <strong>12€</strong></label>
+    <label><input type="checkbox" name="option" value="129"> Polissage mécanique complet — <strong>129€</strong></label>
+    <label><input type="checkbox" name="option" value="20"> Lavage extérieur très encrassé — <strong>20€</strong></label>
+    <label><input type="checkbox" name="option" value="59"> Shampouinage sièges tissu — <strong>59€</strong></label>
+    <label><input type="checkbox" name="option" value="75"> Rénovation sièges cuir — <strong>75€</strong></label>
+    <label><input type="checkbox" name="option" value="15"> Désodorisation cabine (tabac, vomi…) — <strong>15€</strong></label>
+    <label><input type="checkbox" name="option" value="30"> Shampouinage moquettes & tapis — <strong>30€</strong></label>
+    <label><input type="checkbox" name="option" value="25"> Traitement poils d’animaux — <strong>25€</strong></label>
+    <label><input type="checkbox" name="option" value="18"> Nettoyage siège enfant — <strong>18€</strong></label>
+    <label><input type="checkbox" name="option" value="22"> Lavage intérieur très sale — <strong>22€</strong></label>
+  </form>
+
+  <div class="btn-wrapper">
+    <a href="#" class="btn-reserver">SUIVANT</a>
+  </div>
+</section>
+
+
+<!-- TOTAL -->
+<section class="resume-section" style="display: none;">
+  <div class="resume-title">
+    <span class="tag">TOTAL DU DEVIS</span>
+    <h2>Résumé de votre sélection</h2>
+    <p>Le montant total à régler pour les prestations sélectionnées</p>
+  </div>
+
+  <div class="resume-content resume-card">
+    <div class="resume-item">
+      <h3>Type de véhicule</h3>
+      <p id="resume-vehicule">-</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>Type de lavage / Formule</h3>
+      <p id="resume-lavage">-</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>Prestations à la carte</h3>
+      <ul id="resume-prestations">
+        <li>Aucune prestation sélectionnée.</li>
+      </ul>
+    </div>
+
+    <div class="resume-total">
+      <strong>Total :</strong> <span id="resume-total">0€</span>
+    </div>
+
+    <div class="btn-wrapper">
+      <a href="#" class="btn-reserver">RÉSERVER MAINTENANT</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col logo-col">
+      <h3>O’POLISH</h3>
+      <p>
+        Nous redonnons éclat et élégance à votre véhicule grâce à notre savoir-faire en lavage et detailing automobile.<br>
+        Faites confiance à notre expertise pour un résultat impeccable.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>À PROPOS</h4>
+      <ul>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Qui sommes-nous</a></li>
+        <li><a href="#">Pourquoi nous choisir</a></li>
+        <li><a href="#">Notre histoire</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>NOS SERVICES</h4>
+      <ul>
+        <li><a href="#">Lavage extérieur</a></li>
+        <li><a href="#">Traitement pneus</a></li>
+        <li><a href="#">Brillance jantes</a></li>
+        <li><a href="#">Aspiration intérieure</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>NOUS CONTACTER</h4>
+      <ul>
+        <li><a href="#">Notre adresse</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Localisation</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>INFOS COMPLÉMENTAIRES</h4>
+      <ul>
+        <li><a href="#">Véhicule</a></li>
+        <li><a href="#">Moto</a></li>
+        <li><a href="#">Scooter</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 O’Polish | Tous Droits Réservés</p>
+    <p>Template fourni par Mil</p>
+  </div>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script>
+  const vehicleCards = document.querySelectorAll('.vehicle-card');
+  const choiceSection = document.querySelector('.formule-lavage-choice');
+  const choiceButtons = document.querySelectorAll('.choice-btn');
+  const pricingFormule = document.querySelector('.pricing-section');
+  const pricingLavage = document.querySelector('.lavage-section');
+  const prestationSection = document.querySelector('.prestations-section');
+  const resumeSection = document.querySelector('.resume-section');
+  const resumeVehicule = document.getElementById('resume-vehicule');
+  const resumeLavage = document.getElementById('resume-lavage');
+  const resumePrestations = document.getElementById('resume-prestations');
+  const resumeTotal = document.getElementById('resume-total');
+  const prestationsCheckboxes = document.querySelectorAll('.prestations-list input[type="checkbox"]');
+  const suivantBtn = document.querySelector('.btn-wrapper .btn-reserver');
+
+  let selectedVehicle = null;
+  let selectedLavage = null;
+  let lavagePrice = 0;
+
+  prestationSection.style.display = 'none';
+  resumeSection.style.display = 'none';
+
+  vehicleCards.forEach(card => {
+    card.addEventListener('click', () => {
+      vehicleCards.forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      selectedVehicle = card.querySelector('p').innerText.split('\n')[0].trim();
+      choiceSection.style.display = 'block';
+      choiceButtons.forEach(b => b.classList.remove('active'));
+      pricingFormule.style.display = 'none';
+      pricingLavage.style.display = 'none';
+      prestationSection.style.display = 'none';
+      resumeSection.style.display = 'none';
+      choiceSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  choiceButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isActive = btn.classList.contains('active');
+      const choice = btn.dataset.choice;
+
+      choiceButtons.forEach(b => b.classList.remove('active'));
+      pricingFormule.style.display = 'none';
+      pricingLavage.style.display = 'none';
+      prestationSection.style.display = 'none';
+      resumeSection.style.display = 'none';
+
+      if (!isActive) {
+        btn.classList.add('active');
+        if (choice === 'formule') {
+          pricingFormule.style.display = 'block';
+          pricingFormule.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          pricingLavage.style.display = 'block';
+          pricingLavage.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  function updateResume() {
+    resumeVehicule.textContent = selectedVehicle || '-';
+    resumeLavage.textContent = selectedLavage ? `${selectedLavage} - ${lavagePrice.toFixed(2)}€` : '-';
+
+    const selectedOptions = Array.from(prestationsCheckboxes)
+      .filter(cb => cb.checked)
+      .map(cb => {
+        const label = cb.parentElement.innerText.trim();
+        return { label: label, price: parseFloat(cb.value) };
+      });
+
+    resumePrestations.innerHTML = '';
+    let prestationsTotal = 0;
+    if (selectedOptions.length === 0) {
+      resumePrestations.innerHTML = '<li>Aucune prestation sélectionnée.</li>';
+    } else {
+      selectedOptions.forEach(opt => {
+        const li = document.createElement('li');
+        li.textContent = opt.label;
+        resumePrestations.appendChild(li);
+        prestationsTotal += opt.price;
+      });
+    }
+
+    const total = lavagePrice + prestationsTotal;
+    resumeTotal.textContent = total.toFixed(2) + '€';
+  }
+
+  const selectBtns = document.querySelectorAll('.pricing-card .btn-reserver');
+  selectBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = btn.closest('.pricing-card');
+      selectedLavage = card.querySelector('h3').innerText;
+      lavagePrice = parseFloat(card.querySelector('.price').innerText.replace(',', '.').replace('€', '').trim());
+
+      prestationSection.style.display = 'block';
+      resumeSection.style.display = 'block';
+      updateResume();
+
+      prestationSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  prestationsCheckboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      if (resumeSection.style.display !== 'none') {
+        updateResume();
+      }
+    });
+  });
+
+  suivantBtn.addEventListener('click', e => {
+    e.preventDefault();
+    if (!selectedVehicle || !selectedLavage) {
+      alert('Veuillez sélectionner un véhicule et une formule/type de lavage.');
+      return;
+    }
+    updateResume();
+    resumeSection.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+
+
+
+</body>
+</html>

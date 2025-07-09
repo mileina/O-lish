@@ -1,0 +1,55 @@
+.formule-lavage-choice {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.formule-lavage-choice h2 {
+  font-size: 28px;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.choice-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.choice-btn {
+  background-color: white;
+  color: #e53c3c;
+  border: 2px solid #e53c3c;
+  padding: 15px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.choice-btn:hover {
+  background-color: #e53c3c;
+  color: white;
+}
+
+.choice-btn.active {
+  background-color: #e53c3c;
+  color: white;
+  border-color: #e53c3c;
+}
+
+@media (max-width: 600px) {
+  .choice-buttons {
+    flex-direction: column;
+  }
+
+  .choice-btn {
+    width: 90%;
+    max-width: 300px;
+  }
+}

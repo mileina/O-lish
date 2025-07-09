@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation O'Polish</title>
+  <link rel="stylesheet" href="/css/reservation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <a href="/" class="back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <h1>TOTAL DU DEVIS</h1>
+    <p class="info">Résumé de votre sélection</p>
+    <p class="info">Le montant total à régler pour les prestations sélectionnées</p>
+
+    <hr class="separator">
+
+    <p><strong>Type de véhicule</strong><br>Berline</p>
+    <p><strong>Type de lavage / Formule</strong><br>DELUXE - 29.50€</p>
+
+    <p><strong>Prestations à la carte</strong></p>
+    <ul id="prestation-list">
+      <li>Rénovation optiques de phares — 29€</li>
+    </ul>
+
+    <p style="margin-top:20px;font-weight:bold;">Total : <span id="total-price">58.50€</span></p>
+  </div>
+
+  <div class="right">
+    <h2>Sélectionnez la date</h2>
+    <div class="calendar">
+      <div class="calendar-header">
+        <button id="prevMonth"><i class="fa-regular fa-circle-left"></i></button>
+        <span id="monthYear"></span>
+        <button id="nextMonth"><i class="fa-regular fa-circle-right"></i></button>
+      </div>
+      <div class="calendar-grid" id="calendar-days"></div>
+    </div>
+
+    <div class="form-section">
+      <h2>Confirmez vos informations</h2>
+
+      <label>Nom <span class="required">*</span></label>
+      <input type="text" placeholder="Nom" required>
+
+      <label>Prénom <span class="required">*</span></label>
+      <input type="text" placeholder="Prénom" required>
+
+      <label>Email <span class="required">*</span></label>
+      <input type="email" placeholder="Adresse Email" required>
+
+      <label>Téléphone <span class="required">*</span></label>
+      <input type="tel" placeholder="Téléphone" required>
+
+      <button>Envoyer</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/reservation.js"></script>
+</body>
+</html>

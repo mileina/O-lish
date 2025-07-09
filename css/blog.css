@@ -1,0 +1,115 @@
+.blog-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.blog-title .tag {
+  color: #e53c3c;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.blog-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  justify-content: start;
+  background: #fff;
+  transition: background 0.25s ease;
+}
+
+.blog-item:hover {
+  background: #f7f7f7;
+}
+
+.blog-item:hover h3 {
+  color: #e53c3c;
+}
+
+.blog-date {
+  width: 60px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.blog-date .day {
+  color: #e53c3c;
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.blog-date .month {
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+
+.blog-info {
+  flex: 1;
+}
+
+.blog-info .category {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+.blog-info h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 5px;
+  color: #111;
+  transition: color 0.25s ease;
+}
+
+.blog-button {
+  margin-top: 40px;
+}
+
+.btn-primary {
+  background-color: #e53c3c;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: #e53c3c;
+  border: 1px solid #e53c3c;
+}
+
+@media (max-width: 768px) {
+  .blog-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-date {
+    margin-bottom: 10px;
+  }
+}

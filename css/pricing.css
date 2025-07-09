@@ -1,0 +1,159 @@
+.pricing-section {
+  padding: 80px 40px;
+  text-align: center;
+   background-color: #f7f7f7;
+}
+
+.pricing-title .tag {
+  color: #e53c3c;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.pricing-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.pricing-card h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #0056a3;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.btn-reserver {
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: #0056a3;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-reserver:hover {
+  background-color: #e53c3c;
+}
+
+.lavage-section {
+  padding: 80px 40px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.lavage-section .pricing-title {
+  margin-bottom: 50px;
+}
+
+.lavage-section .pricing-title .tag {
+  color: #e53c3c;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.lavage-section .pricing-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .lavage-section .pricing-title h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lavage-section {
+    padding: 60px 20px;
+  }
+
+  .lavage-section .pricing-title h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lavage-section .pricing-title h2 {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width:991px){
+  .pricing-title h2{font-size:30px;}
+  .pricing-card{width:45%;}
+  .pricing-card .price{font-size:28px;}
+  .pricing-card h3{font-size:13px;}
+}
+
+@media (max-width:767px){
+  .pricing-section{padding:60px 20px;}
+  .pricing-title h2{font-size:26px;}
+  .pricing-card{
+    width:100%;
+    margin-bottom:25px;
+    padding:25px 18px;
+  }
+  .pricing-card .price{font-size:26px;}
+  .pricing-card ul li{font-size:13px;}
+}
+
+@media (max-width:480px){
+  .pricing-title h2{font-size:22px;}
+  .pricing-card h3{font-size:12px;}
+  .pricing-card .price{font-size:24px;}
+  .btn-reserver{font-size:9px;padding:10px 16px;}
+}

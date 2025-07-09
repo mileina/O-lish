@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.left, .right {
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.left {
+  background-color: #018BED;
+  color: white;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 20px 0;
+}
+
+.left h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+      margin-top: 50px;
+}
+
+.left .info {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.left p {
+  margin: 10px 0;
+}
+
+.left ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.left ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.right h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #018BED;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.calendar-grid div {
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+}
+
+.calendar-grid .disabled {
+  color: #ccc;
+  background: #eee;
+  pointer-events: none;
+}
+
+.calendar-grid .active {
+  background: #018BED;
+  color: white;
+  font-weight: bold;
+  border-color: #018BED;
+}
+
+.form-section {
+  margin-top: 30px;
+}
+
+.form-section label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-section button {
+  width: 100%;
+  padding: 12px;
+  background: #018BED;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-section button:hover {
+  background: #0071ba;
+}
+
+/* Responsive 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .back-btn {
+    position: static;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .calendar-grid {
+    gap: 6px;
+  }
+
+  .calendar-grid div {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .left, .right {
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 22px;
+  }
+
+  .right h2 {
+    font-size: 18px;
+  }
+
+  .form-section button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form-section input {
+    font-size: 13px;
+  }
+
+  .left ul li {
+    font-size: 13px;
+  }
+}
+
+/* Responsive 375px */
+@media (max-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .calendar-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+
+  .calendar-grid div {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  .left h1 {
+    font-size: 20px;
+  }
+
+  .left p,
+  .left .info,
+  .left ul li {
+    font-size: 13px;
+  }
+
+  .right h2 {
+    font-size: 16px;
+  }
+
+  .form-section input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .form-section button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .back-btn {
+    font-size: 18px;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+/* Responsive 320px */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 6px;
+  }
+
+  .calendar-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+  }
+
+  .calendar-grid div {
+    font-size: 9px;
+    padding: 3px;
+  }
+
+  .left h1 {
+    font-size: 18px;
+  }
+
+  .left p,
+  .left .info,
+  .left ul li {
+    font-size: 12px;
+  }
+
+  .right h2 {
+    font-size: 15px;
+  }
+
+  .form-section input {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  .form-section button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .left, .right {
+    padding: 0px;
+  }
+}
