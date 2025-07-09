@@ -26,6 +26,7 @@ filterButtons.forEach((button) => {
     });
 
     searchInput.value = "";
+    resetPaginationAfterFilter();
   });
 });
 
@@ -40,6 +41,7 @@ searchInput.addEventListener("input", () => {
   });
 
   filterButtons.forEach(btn => btn.classList.remove("active"));
+  resetPaginationAfterFilter();
 });
 
 // MODAL : affichage d’un article en grand
@@ -56,12 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const title = card.querySelector(".blog-title").innerText;
       const date = card.querySelector(".blog-date").innerText;
       const badge = card.querySelector(".blog-badge").innerText;
+      const text = card.querySelector(".blog-article-text");
+
+      let articleText = `<p style="margin-top:15px;">Contenu de l'article ici... (à personnaliser)</p>`;
+      if (text) {
+        articleText = `<p style="margin-top:15px;">${text.innerText}</p>`;
+      }
 
       modalContent.innerHTML = `
         <h2>${title}</h2>
         <p><strong>${badge}</strong> - ${date}</p>
         <img src="${img}" alt="Image Article">
-        <p style="margin-top:15px;">Contenu de l'article ici... (à personnaliser)</p>
+        ${articleText}
       `;
 
       modal.style.display = "flex";
@@ -132,41 +140,5 @@ function resetPaginationAfterFilter() {
   }
 }
 
-// Modifie l’événement existant des filtres pour intégrer la pagination
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
-
-    const selectedCategory = button.getAttribute("data-category");
-
-    blogCards.forEach((card) => {
-      const badge = card.querySelector(".blog-badge");
-      const classList = badge.classList;
-      const match = selectedCategory === "all" || [...classList].some(cls =>
-        cls.includes("categorie-") && cls.includes(selectedCategory)
-      );
-      card.style.display = match ? "flex" : "none";
-    });
-
-    searchInput.value = "";
-    resetPaginationAfterFilter();
-  });
-});
-
-// Modifie l’événement du champ de recherche pour intégrer la pagination
-searchInput.addEventListener("input", () => {
-  const searchValue = searchInput.value.toLowerCase();
-
-  blogCards.forEach((card) => {
-    const title = card.querySelector(".blog-title").textContent.toLowerCase();
-    const match = title.includes(searchValue);
-    card.style.display = match ? "flex" : "none";
-  });
-
-  filterButtons.forEach(btn => btn.classList.remove("active"));
-  resetPaginationAfterFilter();
-});
-
-// Au chargement initial
+// Initialisation
 showPage(1);
