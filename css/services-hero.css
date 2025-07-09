@@ -8,6 +8,14 @@
   justify-content: center;
 }
 
+.services-hero h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
 .hero-video {
   position: absolute;
   top: 0; left: 0;
@@ -63,5 +71,28 @@
   .btn-primary {
     padding: 10px 20px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero h3 {
+    font-size: 16px;
+    max-width: 90%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero h3 {
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 360px) {
+  .services-hero h3 {
+    font-size: 14px;
+    line-height: 1.4;
   }
 }

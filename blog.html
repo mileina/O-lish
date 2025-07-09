@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O'Polish - Blog</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/topbar.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/services-hero.css" />
+    <link rel="stylesheet" href="css/filters.css" />
+    <link rel="stylesheet" href="css/blog-card.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- VIDEO + TOPBAR + NAVBAR + HERO -->
+<div class="video-wrapper">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="images/videobg2.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <div class="video-overlay-content">
+    <div class="topbar">
+      <div class="topbar-section">
+        <div class="contact">contact@rmddetailing.fr</div>
+        <div class="divider"></div>
+      </div>
+      <div class="topbar-section">
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div class="topbar-section">
+        <button class="cta">RÉSERVER</button>
+      </div>
+    </div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="O'Polish Logo" />
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="galerie.html">Réalisation</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="services-hero">
+  <div class="hero-content">
+    <h1>Nos Conseils & Actualités Lavage Auto</h1>
+  </div>
+</section>
+
+</div>
+</div>
+
+<!-- FILTRE -->
+<div class="blog-filters-container">
+  <div class="blog-filters">
+    <button class="active" data-category="all">Tous</button>
+    <button data-category="confort">Confort</button>
+    <button data-category="shopping">Shopping</button>
+    <button data-category="conseils">Conseils</button>
+    <button data-category="actualite">Actualité</button>
+    <button data-category="protection">Protection</button>
+    <button data-category="restauration">Restauration</button>
+    <button data-category="nettoyage">Nettoyage</button>
+    <button data-category="renovation">Rénovation</button>
+  </div>
+
+  <div class="blog-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Rechercher un article..." id="search-input" />
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<section class="articles-area">
+  <div class="blog-grid">
+
+
+    <!-- Actualité -->
+    <div class="blog-card">
+      <img src="images/articles/article1.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-actualite">Actualité</span>
+          <span class="blog-date">2024-01-10</span>
+        </div>
+        <h3 class="blog-title">Gtechniq : La Révolution du Detailing Automobile</h3>
+        <a href="article.php?id=1" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Confort -->
+    <div class="blog-card">
+      <img src="images/articles/article2.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-confort">Confort</span>
+          <span class="blog-date">2024-02-05</span>
+        </div>
+        <h3 class="blog-title">Les Nouveaux Accessoires pour un Voyage Plus Confortable</h3>
+        <a href="article.php?id=2" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Shopping -->
+    <div class="blog-card">
+      <img src="images/articles/article3.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-shopping">Shopping</span>
+          <span class="blog-date">2024-03-12</span>
+        </div>
+        <h3 class="blog-title">Top 5 des Gadgets Auto à Acheter en 2024</h3>
+        <a href="article.php?id=3" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Conseils -->
+    <div class="blog-card">
+      <img src="images/articles/article4.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-conseils">Conseils</span>
+          <span class="blog-date">2024-04-01</span>
+        </div>
+        <h3 class="blog-title">Comment Préparer votre Voiture pour l'Été</h3>
+        <a href="article.php?id=4" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Protection -->
+    <div class="blog-card">
+      <img src="images/articles/article5.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-protection">Protection</span>
+          <span class="blog-date">2024-05-08</span>
+        </div>
+        <h3 class="blog-title">Les Films Protecteurs : Est-ce Vraiment Utile ?</h3>
+        <a href="article.php?id=5" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Restauration -->
+    <div class="blog-card">
+      <img src="images/articles/article6.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-restauration">Restauration</span>
+          <span class="blog-date">2024-06-15</span>
+        </div>
+        <h3 class="blog-title">Restauration d’Intérieur : Avant/Après Impressionnant</h3>
+        <a href="article.php?id=6" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Nettoyage -->
+    <div class="blog-card">
+      <img src="images/articles/article7.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-nettoyage">Nettoyage</span>
+          <span class="blog-date">2024-07-20</span>
+        </div>
+        <h3 class="blog-title">Routine Nettoyage : Garder sa Voiture Propre Facilement</h3>
+        <a href="article.php?id=7" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+    <!-- Rénovation -->
+    <div class="blog-card">
+      <img src="images/articles/article8.jpg" alt="Image Article" class="blog-card-image">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
+          <span class="blog-badge categorie-renovation">Rénovation</span>
+          <span class="blog-date">2024-08-03</span>
+        </div>
+        <h3 class="blog-title">Peinture, Jantes, Sellerie : Rénover sa Voiture comme Neuve</h3>
+        <a href="article.php?id=8" class="blog-btn">LIRE L'ARTICLE</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <div class="pagination" id="pagination"></div>
+
+<div id="article-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<script src="js/navbar.js"></script>
+<script src="js/filters.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'Polish – Réalisations</title>
+
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/services-hero.css">
+  <link rel="stylesheet" href="css/filter-galerie.css">
+  <link rel="stylesheet" href="css/realisation-card.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- =================== VIDEO + TOPBAR + NAVBAR + HERO =================== -->
+<div class="video-wrapper">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="images/videobg2.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <div class="video-overlay-content">
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="topbar-section">
+        <div class="contact">contact@rmddetailing.fr</div><div class="divider"></div>
+      </div>
+      <div class="topbar-section">
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div><div class="divider"></div>
+      </div>
+      <div class="topbar-section"><button class="cta">RÉSERVER</button></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="O'Polish"></a></div>
+        <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="galerie.html">Réalisation</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="services-hero">
+      <div class="hero-content">
+        <h1>Nos réalisations</h1>
+        <h3>Découvrez nos plus belles transformations sur tous types de véhicules : lavage, rénovation, protection…</h3>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ========================== FILTRES (3 boutons) ====================== -->
+<div class="filter-container">
+  <div class="filter-row">
+    <span>Filtrer&nbsp;:</span>
+    <button class="filter-btn active" data-filter="all">Tous</button>
+    <button class="filter-btn" data-filter="exterieur">Lavage extérieur</button>
+    <button class="filter-btn" data-filter="interieur">Lavage intérieur</button>
+    <button class="filter-btn" data-filter="detailing">Lavage complet</button>
+  </div>
+</div>
+
+<!-- ========================== FILTRES PRESTATION ====================== -->
+<div class="filter-prestation-container">
+  <div class="filter-row">
+    <span>Et/ou par prestation :</span>
+    <div class="custom-select">
+      <select id="filter-select">
+        <option value="">Type de prestation</option>
+        <option value="ceramique">Traitement céramique</option>
+        <option value="renovation-phares">Rénovation phares</option>
+        <option value="desinfection">Désinfection</option>
+        <option value="haut-de-gamme">Véhicule haut de gamme</option>
+      </select>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========================== CARTES ================================== -->
+<section class="realisation-section">
+
+<!-- 1. Extérieur + Céramique -->
+<article class="realisation-card exterieur ceramique">
+  <div class="realisation-media gallery-set">
+    <img src="images/before.png" alt="Vue 1">
+    <img src="images/after.png" alt="Vue 2" style="display: none;">
+  </div>
+  <div class="realisation-content">
+    <span class="realisation-category">Lavage extérieur</span>
+    <h3>Traitement céramique sur carrosserie noire</h3>
+    <p class="realisation-article-text" style="display: none;">
+  Ce traitement céramique a été appliqué sur une carrosserie noire afin d’assurer une protection longue durée contre les agressions extérieures telles que la pollution, la pluie acide ou les micro-rayures. Après un polissage minutieux, la surface a été décontaminée puis scellée avec une céramique haut de gamme offrant une brillance miroir et un effet hydrophobe impressionnant.
+</p>
+    <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+  </div>
+</article>
+
+  <!-- 2. Intérieur + Désinfection -->
+  <article class="realisation-card interieur desinfection">
+    <div class="realisation-media">
+      <iframe src="https://www.youtube.com/embed/VIDEOCODE" title="YouTube" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage intérieur</span>
+      <h3>Désinfection complète après transport d’animaux</h3>
+      <p class="realisation-article-text" style="display: none;">
+  Après plusieurs transports d’animaux, l’intérieur de ce véhicule nécessitait une désinfection complète. Chaque surface a été traitée avec des produits antibactériens spécifiques, y compris les tissus et conduits d’aération. Le résultat : un habitacle sain, sans odeur, parfaitement propre et sans allergènes.
+</p>
+
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 3. Complet + Rénovation phares -->
+  <article class="realisation-card detailing renovation-phares">
+    <div class="realisation-media">
+      <img src="images/realisation3.jpg" alt="Complet rénov phares">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage complet</span>
+      <h3>Detailing complet – optiques restaurés</h3>
+      <p class="realisation-article-text" style="display: none;">
+  Ce detailing complet a transformé l’esthétique de ce véhicule. La carrosserie a été lavée, polie en plusieurs passes, tandis que les phares ternis ont été rénovés à l’aide d’un kit professionnel. Le véhicule a retrouvé son éclat d’origine, et la sécurité de conduite de nuit a été grandement améliorée.
+</p>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+<!-- 4. Extérieur + Haut de gamme (vidéo TikTok) -->
+<article class="realisation-card exterieur haut-de-gamme">
+  <div class="realisation-media">
+    <iframe 
+      src="https://www.tiktok.com/embed/v2/7293052638087032065" 
+      frameborder="0" 
+      allowfullscreen
+      scrolling="no"
+      width="100%" 
+      height="480">
+    </iframe>
+  </div>
+  <div class="realisation-content">
+    <span class="realisation-category">Lavage extérieur</span>
+    <h3>Brillance miroir sur véhicule de prestige</h3>
+    <p class="realisation-article-text" style="display: none;">
+  Véhicule de prestige traité avec une finition haut de gamme. Après un lavage minutieux, un lustrage miroir a été effectué suivi d’un traitement protecteur spécifique aux peintures métallisées. Ce travail est documenté dans une vidéo TikTok pour mettre en valeur le résultat éblouissant.
+</p>
+    <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+  </div>
+</article>
+
+
+  <!-- 5. Intérieur + Céramique -->
+  <article class="realisation-card interieur ceramique">
+    <div class="realisation-media">
+      <img src="images/realisation5.jpg" alt="Intérieur céramique">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage intérieur</span>
+      <h3>Intérieur cuir – protection céramique hydrophobe</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 6. Extérieur + Rénovation phares -->
+  <article class="realisation-card exterieur renovation-phares">
+    <div class="realisation-media">
+      <img src="images/realisation6.jpg" alt="Extérieur + rénovation phares">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage extérieur</span>
+      <h3>Lustrage complet &amp; phares restaurés</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 7. Complet + Haut de gamme -->
+  <article class="realisation-card detailing haut-de-gamme">
+    <div class="realisation-media">
+      <img src="images/realisation7.jpg" alt="Complet haut de gamme">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage complet</span>
+      <h3>Detailing concours sur supercar italienne</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 8. Extérieur + Désinfection -->
+  <article class="realisation-card exterieur desinfection">
+    <div class="realisation-media">
+      <img src="images/realisation8.jpg" alt="Extérieur + désinfection">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage extérieur</span>
+      <h3>Désinfection extérieure post-chantier</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 9. Intérieur + Haut de gamme -->
+  <article class="realisation-card interieur haut-de-gamme">
+    <div class="realisation-media">
+      <img src="images/realisation9.jpg" alt="Intérieur haut de gamme">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage intérieur</span>
+      <h3>Dressing prestige d’un intérieur Alcantara</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 10. Complet + Céramique -->
+  <article class="realisation-card detailing ceramique">
+    <div class="realisation-media">
+      <img src="images/realisation10.jpg" alt="Complet céramique">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage complet</span>
+      <h3>Polish 3 passes &amp; céramique 5 ans</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 11. Intérieur + Rénovation phares -->
+  <article class="realisation-card interieur renovation-phares">
+    <div class="realisation-media">
+      <img src="images/realisation11.jpg" alt="Intérieur + rénovation phares">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage intérieur</span>
+      <h3>Pack intérieur + optiques sur Youngtimer</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 12. Complet + Désinfection -->
+  <article class="realisation-card detailing desinfection">
+    <div class="realisation-media">
+      <img src="images/realisation12.jpg" alt="Complet désinfection">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage complet</span>
+      <h3>Traitement antibactérien &amp; ozone après inondation</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 13. Extérieur + Céramique (autre couleur) -->
+  <article class="realisation-card exterieur ceramique">
+    <div class="realisation-media">
+      <img src="images/realisation13.jpg" alt="Extérieur céramique (bleu)">
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage extérieur</span>
+      <h3>Protection céramique sur peinture bleu nacré</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+  <!-- 14. Intérieur + Désinfection -->
+  <article class="realisation-card interieur desinfection">
+    <div class="realisation-media">
+      <iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO" title="YouTube" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="realisation-content">
+      <span class="realisation-category">Lavage intérieur</span>
+      <h3>Nettoyage vapeur &amp; désinfection taxi</h3>
+      <a href="#" class="realisation-btn">LIRE L’ARTICLE</a>
+    </div>
+  </article>
+
+</section>
+
+
+
+<!-- ======================== PAGINATION ================================ -->
+<div class="pagination">
+  <button class="page-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+  <span class="page-numbers"></span>
+  <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<script src="js/realisation.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+</html>

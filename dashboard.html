@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - O'Polish</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">O'Polish</h2>
+      <ul class="sidebar-menu">
+        <li><a href="#" class="menu-link active" data-section="realisation">Réalisation</a></li>
+        <li><a href="#" class="menu-link" data-section="blog">Blog</a></li>
+        <li><a href="#" class="menu-link" data-section="faq">FAQ</a></li>
+      </ul>
+      <div class="auth-section">
+        <button id="loginBtn" class="auth-btn">Se connecter</button>
+        <button id="logoutBtn" class="auth-btn hidden">Déconnexion</button>
+      </div>
+    </aside>
+
+    <!-- CONTENU -->
+    <main class="dashboard-content">
+      <section id="realisation" class="content-section active">
+        <h1>Gestion des Réalisations</h1>
+        <p>Liste, ajout et suppression des réalisations ici.</p>
+      </section>
+
+      <section id="blog" class="content-section">
+        <h1>Gestion des Articles</h1>
+        <p>Créer, modifier ou supprimer des articles de blog.</p>
+      </section>
+
+      <section id="faq" class="content-section">
+        <h1>Gestion de la FAQ</h1>
+        <p>Ajouter des questions/réponses fréquentes.</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- MODAL CONNEXION -->
+  <div class="login-modal hidden" id="loginModal">
+    <div class="login-box">
+      <span class="close-modal" id="closeLogin">&times;</span>
+      <h2>Connexion</h2>
+      <input type="text" id="usernameInput" placeholder="Nom d'utilisateur" />
+      <input type="password" id="passwordInput" placeholder="Mot de passe" />
+      <button id="confirmLogin">Se connecter</button>
+    </div>
+  </div>
+<script src="js/navbar.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
